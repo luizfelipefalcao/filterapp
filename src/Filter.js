@@ -22,8 +22,8 @@ export default function FilterApp() {
 
   useEffect(() => {
     setFilteredCountries(
-      countries.filter((country) =>
-        country.name.toLowerCase().includes(search.toLowerCase())
+      countries.filter((countryItem) =>
+        countryItem.name.toLowerCase().includes(search.toLowerCase())
       )
     );
   }, [search, countries]);
@@ -40,22 +40,22 @@ export default function FilterApp() {
         placeholder="Search Countries"
         onChange={(e) => setSearch(e.target.value)}
       />
-      {filteredCountries.map((country, idx) => (
-        <CountryDetail key={idx} {...country} />
+      {filteredCountries.map((country, index) => (
+        <CountryDetail key={index} {...country} />
       ))}
     </div>
   );
 }
 
 const CountryDetail = (props) => {
-  const { name, flag } = props;
+  const { name, flag, alpha3Code } = props;
 
   return (
     <>
       <p>
         <img src={flag} alt={name} style={{ width: "60px", height: "40px" }} />
       </p>
-      <p>{name}</p>
+      <p>{name} ({alpha3Code}) </p>
     </>
   );
 };
