@@ -35,5 +35,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Commands
 
-- `start`: starts the application on `localhost:3003`
+- `start`: starts the application on `localhost:3000`
 
