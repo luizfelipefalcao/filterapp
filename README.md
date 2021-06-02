@@ -9,9 +9,9 @@ Live Demo for App is at https://my-country-finder.netlify.app
 This project uses lot of stuff as:
 
 - ReactJs
-- Firebase
+- React Hooks
 - CSS
-- React-Icons
+- API https://restcountries.eu/rest/v2
 
 
 ## Getting Started
@@ -31,7 +31,7 @@ to run the application
 
 ```
 
-Open [http://localhost:3003](http://localhost:3003) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Commands
 
