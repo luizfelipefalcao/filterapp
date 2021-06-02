@@ -2,7 +2,7 @@
 
 This project was bootstrapped with Create React App.
 
-Live Demo for App is at 
+Live Demo for App is at https://my-country-finder.netlify.app
 
 ## What is inside?
 
